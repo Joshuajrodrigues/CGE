@@ -1,0 +1,33 @@
+#sa-header{
+    .navbar{
+
+        .nav-part2{
+            &::before{
+                border-width: 72px 22px 0 0;
+                left: -22px;
+            }
+        }
+    }
+}
+
+#steps{
+
+    .value-box.box-reverse{
+        
+    }
+
+    .value-box{
+        .section-headers{
+            width: 90%;
+            display: block;
+            margin: auto;
+
+            .section-header2{
+                color: #0f1925;
+                letter-spacing: 0.5px;
+                margin-bottom: 8px;
+            }
+        }
+        
+    }
+}
