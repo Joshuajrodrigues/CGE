@@ -44,7 +44,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: #edf4fa;
+  background: #edfaf9;
   -webkit-clip-path: polygon(0 0, 50% 0, 43% 100%, 0 100%);
           clip-path: polygon(0 0, 50% 0, 43% 100%, 0 100%);
   z-index: -1;
@@ -83,7 +83,26 @@
   }
 }
 
-.job-card {
+#job-listings {
+  background: #f5f5f5;
+}
+
+#job-listings .col-md-3 .nav-pills .nav-link {
+  color: black;
+}
+
+#job-listings .col-md-3 .nav-pills .nav-link.active {
+  color: white;
+  background-color: #00b6b6;
+}
+
+#job-listings .col-md-9 {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+#job-listings .col-md-9 .job-card {
   border-radius: 5px;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
@@ -93,12 +112,12 @@
   width: 90%;
 }
 
-.job-card .job-title {
+#job-listings .col-md-9 .job-card .job-title {
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-.job-card .job-location {
+#job-listings .col-md-9 .job-card .job-location {
   color: #48b985;
 }
 
@@ -220,6 +239,10 @@ header .navbar .navbar-collapse .nav-part1 .dropdown.nav-item:hover .dropdown-me
   display: block;
 }
 
+header .navbar .navbar-collapse .nav-part1 .dropdown-menu {
+  margin: 0;
+}
+
 header .navbar .navbar-collapse .nav-part2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,7 +252,7 @@ header .navbar .navbar-collapse .nav-part2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #dceaf6;
+  background-color: snow;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,7 +265,7 @@ header .navbar .navbar-collapse .nav-part2 .nav-link {
 }
 
 header .navbar .navbar-collapse .nav-part2::before {
-  border-color: transparent #dceaf6 transparent transparent;
+  border-color: transparent snow transparent transparent;
   border-style: solid;
   border-width: 72px 12px 0 0;
   bottom: 0;
@@ -254,7 +277,7 @@ header .navbar .navbar-collapse .nav-part2::before {
 }
 
 header .navbar .navbar-collapse .nav-part2::after {
-  background-color: #dceaf6;
+  background-color: snow;
   content: "";
   height: 100%;
   left: 100%;
@@ -306,7 +329,8 @@ header .navbar .navbar-collapse .nav-link {
 
 #landing-page #hero-section, #values-landing #hero-section {
   margin-top: -72px;
-  background: linear-gradient(#1a2732 0px, #147bd1 75%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a322f), to(#14d1cc));
+  background: linear-gradient(180deg, #1a322f 0%, #14d1cc 100%);
   position: relative;
 }
 
@@ -369,7 +393,8 @@ header .navbar .navbar-collapse .nav-link {
 }
 
 #landing-page #hero-section .hero-content .btn-success, #values-landing #hero-section .hero-content .btn-success {
-  background-color: #48b985;
+  background-color: #fff;
+  color: #004444;
   border: none;
   border-radius: 3px;
   font-weight: 600;
@@ -377,7 +402,8 @@ header .navbar .navbar-collapse .nav-link {
 }
 
 #landing-page #hero-section .hero-content::after, #values-landing #hero-section .hero-content::after {
-  background: linear-gradient(#1a2732 0px, #147bd1 75%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a322f), to(#14d1cc));
+  background: linear-gradient(180deg, #1a322f 0%, #14d1cc 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
   content: "";
@@ -482,8 +508,8 @@ header .navbar .navbar-collapse .nav-link {
 }
 
 #one {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edf4fa));
-  background: linear-gradient(180deg, #fff, #edf4fa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edfaf8));
+  background: linear-gradient(180deg, #fff, #edfaf8);
   padding: 50px 0;
 }
 
@@ -542,8 +568,8 @@ header .navbar .navbar-collapse .nav-link {
 }
 
 #two {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edf4fa));
-  background: linear-gradient(180deg, #fff, #edf4fa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edfaf8));
+  background: linear-gradient(180deg, #fff, #edfaf8);
   padding: 50px 0;
   text-align: center;
 }
@@ -841,7 +867,8 @@ img {
 }
 
 #three .feature-content .feature-action .btn-success {
-  background-color: #48b985;
+  background-color: snow;
+  color: #191f31;
   border-radius: 3px;
   font-weight: 700;
   border: none;
@@ -858,9 +885,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #three .feature-assets .feature-logo {
@@ -1227,7 +1254,9 @@ img {
 }
 
 .team-member {
-  background-color: #147bd1;
+  background: #243854;
+  background: -webkit-gradient(linear, left top, left bottom, from(#243854), to(#0f9ce0));
+  background: linear-gradient(180deg, #243854 0%, #0f9ce0 100%);
   color: #dceaf6;
   overflow: hidden;
 }
@@ -1259,6 +1288,10 @@ img {
   margin: auto;
 }
 
+.team-member .container .row .col-12 .team-member-photo img, .team-member .container .row .col-md-6 .team-member-photo img {
+  border-radius: 15px;
+}
+
 .team-member .container .row .col-12 .team-member-bio, .team-member .container .row .col-md-6 .team-member-bio {
   width: 80%;
   display: block;
@@ -1278,6 +1311,11 @@ img {
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 39.9px;
+}
+
+.team-member .container .row .col-12 .team-member-bio .btn-success, .team-member .container .row .col-md-6 .team-member-bio .btn-success {
+  color: #191f31;
+  background: snow;
 }
 
 .team-member .container .greeting {
@@ -1398,7 +1436,7 @@ img {
 }
 
 footer {
-  background: #1a2732;
+  background: #1c1c1c;
   color: white;
 }
 
@@ -1407,9 +1445,11 @@ footer .col-md-6 {
 }
 
 footer .col-md-6 .btn-primary {
-  background: #147bd1;
+  background: snow;
+  color: #191f31;
   padding: 0.4rem 2rem;
   margin-right: 20px;
+  border: none;
 }
 
 footer .col-md-6 .row {
@@ -1423,16 +1463,16 @@ footer .col-md-6 .row .col-6 ul {
 
 footer .col-md-6 .row .col-6 ul li {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 footer .col-md-6 .row .col-6 ul li a {
-  color: #147bd1;
+  color: #bbbbbb;
   text-decoration: none;
 }
 
 footer .col-md-6 .row .col-6 ul li a:hover {
-  color: #48b985;
+  color: #a4d6ff;
 }
 
 footer .col-md-6 .socials {

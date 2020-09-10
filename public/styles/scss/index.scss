@@ -100,13 +100,17 @@ header{
                 .dropdown.nav-item:hover .dropdown-menu{
                     display: block;
                 }
+
+                .dropdown-menu{
+                    margin: 0;
+                }
             }
             
             .nav-part2{
                 display: flex;
                 flex-basis: 34.3%;
                 justify-content: space-evenly;
-                background-color: #dceaf6;
+                background-color: snow;
                 align-items: center;
                 height: 100%;
                 position: relative;
@@ -117,7 +121,7 @@ header{
 
 
                 &::before{
-                    border-color: transparent #dceaf6 transparent transparent;
+                    border-color: transparent snow transparent transparent;
                     border-style: solid;
                     border-width: 72px 12px 0 0;
                     bottom: 0;
@@ -131,7 +135,7 @@ header{
                 }
 
                 &::after{
-                    background-color: #dceaf6;
+                    background-color: snow;
                     content: "";
                     height: 100%;
                     left: 100%;
@@ -186,10 +190,6 @@ header{
 
 #values-landing{
     color: white;
-
-    .text-content{
-
-    }
 }
 
 
@@ -198,7 +198,7 @@ header{
 
     #hero-section{
         margin-top: -72px;
-        background: linear-gradient(rgb(26, 39, 50) 0px, rgb(20, 123, 209) 75%);
+        background: linear-gradient(180deg, rgba(26,50,47,1) 0%, rgba(20,209,204,1) 100%);;
         position: relative;
 
         .container{
@@ -246,7 +246,8 @@ header{
             }
 
             .btn-success{
-                background-color: #48b985;
+                background-color: #fff;
+                color: #004444;
                 border: none;
                 border-radius: 3px;
                 font-weight: 600;
@@ -255,7 +256,7 @@ header{
         }
 
         .hero-content::after{
-            background: linear-gradient(rgb(26, 39, 50) 0px, rgb(20, 123, 209) 75%);
+            background: linear-gradient(180deg, rgba(26,50,47,1) 0%, rgba(20,209,204,1) 100%);;
             clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
             content: "";
             display: block;
@@ -366,7 +367,7 @@ header{
 }
 
 #one{
-    background: linear-gradient(180deg,#fff,#edf4fa);
+    background: linear-gradient(180deg,#fff,#edfaf8);
     padding: 50px 0;
     .row{
         .col-lg-6{
@@ -425,7 +426,7 @@ header{
 }
 
 #two{
-    background: linear-gradient(180deg,#fff,#edf4fa);
+    background: linear-gradient(180deg,#fff,#edfaf8);
     padding: 50px 0;
     text-align: center;
 
@@ -633,10 +634,6 @@ img {
             background-size: cover;
             background-position: center;
         }
-
-        .feature-icon{
-            
-        }
     } 
 
     .feature-wrapper{
@@ -708,7 +705,8 @@ img {
             text-align: center;
 
             .btn-success{
-                background-color: #48b985;
+                background-color: snow;
+                color: #191f31;
                 border-radius: 3px;
                 font-weight: 700;
                 border: none;
@@ -720,7 +718,7 @@ img {
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
 
         .feature-logo{
             background-color: transparent;
@@ -1093,7 +1091,8 @@ img {
 
 
 .team-member{
-    background-color: #147bd1;
+    background: rgb(36,56,84);
+background: linear-gradient(180deg, rgba(36,56,84,1) 0%, rgba(15,156,224,1) 100%);
     color: #dceaf6;
     overflow: hidden;
 
@@ -1121,6 +1120,10 @@ img {
                 .team-member-photo{
                     max-width: 450px;
                     margin: auto;
+
+                    img{
+                        border-radius: 15px;
+                    }
                 }
 
 
@@ -1143,6 +1146,11 @@ img {
                         font-weight: 400;
                         line-height: 1.2;
                         margin-bottom: 39.9px;
+                    }
+
+                    .btn-success{
+                        color: #191f31;
+                        background: snow;
                     }
                 }
             }
@@ -1272,16 +1280,18 @@ img {
 
 
 footer{
-    background: #1a2732;
+    background: #1c1c1c;
     color: white;
 
     .col-md-6{
         padding: 0 80px;
 
         .btn-primary{
-            background: #147bd1;
+            background: snow;
+            color: #191f31;
             padding: 0.4rem 2rem;
             margin-right: 20px;
+            border: none;
         }
 
         .row{
@@ -1294,12 +1304,12 @@ footer{
                     li{
                         margin-bottom: 10px;
                         
-                        font-weight: 700;
+                        font-weight: 500;
                         a{
-                            color: #147bd1;
+                            color: #bbbbbb;
                             text-decoration: none;
                             &:hover{
-                                color: #48b985;
+                                color: #a4d6ff;
                             }
                         }
                     }
