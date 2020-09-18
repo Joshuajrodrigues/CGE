@@ -1,6 +1,21 @@
 #values-header .navbar .nav-part2::before {
-  border-width: 72px 18px 0 0;
-  left: -18px;
+  border-width: 72px 20px 0 0;
+  left: -20px;
+}
+
+#values-landing .text-content {
+  margin: 0;
+}
+
+#values-landing .hero-header {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .text-content {
+    margin: auto !important;
+  }
 }
 
 #ceomessage .quote-mark {
@@ -208,6 +223,10 @@ header .navbar .navbar-brand {
   font-size: 36px;
 }
 
+header .navbar .navbar-brand .brand-logo {
+  max-width: 30px;
+}
+
 header .navbar .navbar-toggler {
   position: relative;
   z-index: 10;
@@ -228,8 +247,8 @@ header .navbar .navbar-collapse .nav-part1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -247,8 +266,8 @@ header .navbar .navbar-collapse .nav-part2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 34.3%;
-      flex-basis: 34.3%;
+  -ms-flex-preferred-size: 35.7%;
+      flex-basis: 35.7%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -323,22 +342,22 @@ header .navbar .navbar-collapse .nav-link {
   }
 }
 
-#values-landing {
+#values-landing, #sa-landing {
   color: white;
 }
 
-#landing-page #hero-section, #values-landing #hero-section {
+#landing-page #hero-section, #values-landing #hero-section, #sa-landing #hero-section {
   margin-top: -72px;
   background: -webkit-gradient(linear, left top, left bottom, from(#1a322f), to(#14d1cc));
   background: linear-gradient(180deg, #1a322f 0%, #14d1cc 100%);
   position: relative;
 }
 
-#landing-page #hero-section .container, #values-landing #hero-section .container {
+#landing-page #hero-section .container, #values-landing #hero-section .container, #sa-landing #hero-section .container {
   height: 100%;
 }
 
-#landing-page #hero-section .hero-wrapper, #values-landing #hero-section .hero-wrapper {
+#landing-page #hero-section .hero-wrapper, #values-landing #hero-section .hero-wrapper, #sa-landing #hero-section .hero-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +372,7 @@ header .navbar .navbar-collapse .nav-link {
   position: relative;
 }
 
-#landing-page #hero-section .hero-content, #values-landing #hero-section .hero-content {
+#landing-page #hero-section .hero-content, #values-landing #hero-section .hero-content, #sa-landing #hero-section .hero-content {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   max-width: 70%;
@@ -369,30 +388,30 @@ header .navbar .navbar-collapse .nav-link {
   text-align: left;
 }
 
-#landing-page #hero-section .hero-content .text-content, #values-landing #hero-section .hero-content .text-content {
+#landing-page #hero-section .hero-content .text-content, #values-landing #hero-section .hero-content .text-content, #sa-landing #hero-section .hero-content .text-content {
   display: block;
   margin: auto;
   position: relative;
   z-index: 3;
 }
 
-#landing-page #hero-section .hero-content .quote, #values-landing #hero-section .hero-content .quote {
+#landing-page #hero-section .hero-content .quote, #values-landing #hero-section .hero-content .quote, #sa-landing #hero-section .hero-content .quote {
   width: 80%;
   font-family: 'roboto', sans-serif;
   font-weight: 300;
   font-size: 42px;
   line-height: 1.3;
   margin-bottom: 40px;
-  color: #ffffffcc;
+  color: #ffffff;
 }
 
-#landing-page #hero-section .hero-content .sub-header, #values-landing #hero-section .hero-content .sub-header {
+#landing-page #hero-section .hero-content .sub-header, #values-landing #hero-section .hero-content .sub-header, #sa-landing #hero-section .hero-content .sub-header {
   width: 80%;
-  color: #ffffffc0;
+  color: #fffffff0;
   margin-bottom: 30px;
 }
 
-#landing-page #hero-section .hero-content .btn-success, #values-landing #hero-section .hero-content .btn-success {
+#landing-page #hero-section .hero-content .btn-success, #values-landing #hero-section .hero-content .btn-success, #sa-landing #hero-section .hero-content .btn-success {
   background-color: #fff;
   color: #004444;
   border: none;
@@ -401,7 +420,7 @@ header .navbar .navbar-collapse .nav-link {
   padding: 0.7rem 2rem;
 }
 
-#landing-page #hero-section .hero-content::after, #values-landing #hero-section .hero-content::after {
+#landing-page #hero-section .hero-content::after, #values-landing #hero-section .hero-content::after, #sa-landing #hero-section .hero-content::after {
   background: -webkit-gradient(linear, left top, left bottom, from(#1a322f), to(#14d1cc));
   background: linear-gradient(180deg, #1a322f 0%, #14d1cc 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
@@ -417,7 +436,7 @@ header .navbar .navbar-collapse .nav-link {
   z-index: 2;
 }
 
-#landing-page #hero-section .hero-images, #values-landing #hero-section .hero-images {
+#landing-page #hero-section .hero-images, #values-landing #hero-section .hero-images, #sa-landing #hero-section .hero-images {
   background-position: 0;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
@@ -431,7 +450,7 @@ header .navbar .navbar-collapse .nav-link {
   background-size: cover;
 }
 
-#landing-page #hero-section .hero-images nav.nav, #values-landing #hero-section .hero-images nav.nav {
+#landing-page #hero-section .hero-images nav.nav, #values-landing #hero-section .hero-images nav.nav, #sa-landing #hero-section .hero-images nav.nav {
   padding: 20px 0 20px 25px;
   position: absolute;
   z-index: 2;
@@ -442,12 +461,12 @@ header .navbar .navbar-collapse .nav-link {
   background-color: #dceaf6;
 }
 
-#landing-page #hero-section .hero-images nav.nav .nav-link, #values-landing #hero-section .hero-images nav.nav .nav-link {
+#landing-page #hero-section .hero-images nav.nav .nav-link, #values-landing #hero-section .hero-images nav.nav .nav-link, #sa-landing #hero-section .hero-images nav.nav .nav-link {
   color: #3a4045;
   text-decoration: none;
 }
 
-#landing-page #hero-section .hero-images nav.nav .btn-success, #values-landing #hero-section .hero-images nav.nav .btn-success {
+#landing-page #hero-section .hero-images nav.nav .btn-success, #values-landing #hero-section .hero-images nav.nav .btn-success, #sa-landing #hero-section .hero-images nav.nav .btn-success {
   background-color: #48b985;
   border: none;
   border-radius: 3px;
@@ -1011,14 +1030,14 @@ img {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/styles/css/img/nz.jpg");
 }
 
-#destinations .japan {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("/styles/css/img/japan.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/styles/css/img/japan.jpg");
+#destinations .dubai {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("/styles/css/img/dubai.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/styles/css/img/dubai.jpg");
 }
 
-#destinations .germany {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("/styles/css/img/germany.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/styles/css/img/germany.jpg");
+#destinations .europe {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url("/styles/css/img/europe.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/styles/css/img/europe.jpg");
 }
 
 #destinations .singapore {
@@ -1077,8 +1096,21 @@ img {
 }
 
 .layer.insights .container .main-card .row .text-content {
-  padding: 50px 70px;
+  padding: 30px 70px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .layer.insights .container .main-card .row .text-content h3 {
@@ -1094,6 +1126,7 @@ img {
   -webkit-box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.2);
   padding: 40px;
+  margin-bottom: 30px;
   background: white;
   display: -ms-grid;
   display: grid;
@@ -1131,6 +1164,33 @@ img {
   grid-area: link;
   text-align: left;
   font-weight: 700;
+}
+
+#blog-header .navbar {
+  background: teal;
+}
+
+#blog-section {
+  padding: 75px 0;
+}
+
+#blog-section .blog-header {
+  margin-bottom: 40px;
+}
+
+#blog-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  color: #555a62;
+  margin-bottom: 20px;
+}
+
+#blog-section li {
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.5;
+  color: #555a62;
 }
 
 .callout {

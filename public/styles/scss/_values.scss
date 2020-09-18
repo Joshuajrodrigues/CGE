@@ -3,13 +3,29 @@
 
         .nav-part2{
             &::before{
-                border-width: 72px 18px 0 0;
-                left: -18px;
+                border-width: 72px 20px 0 0;
+                left: -20px;
             }
         }
     }
 }
 
+
+#values-landing{
+    .text-content{
+        margin: 0;
+    }
+    .hero-header{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 992px){
+    .text-content{
+        margin: auto !important;
+    }
+}
 
 
 #ceomessage{
