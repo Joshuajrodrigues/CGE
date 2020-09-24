@@ -1,20 +1,10 @@
-#sa-header{
-    .navbar{
-
-        .nav-part2{
-            &::before{
-                border-width: 72px 22px 0 0;
-                left: -22px;
-            }
-        }
+#secondary-hero.sa-hero{
+    .hero-header{
+        font-size: 3rem;
     }
 }
 
 #steps{
-
-    .value-box.box-reverse{
-        
-    }
 
     .value-box{
         .section-headers{

@@ -16,6 +16,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet" />
+	<!-- Lozad js  -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 	<!-- CSS Main -->
 	<link rel="stylesheet" href="./styles/css/index.css" />
 
@@ -23,19 +25,8 @@
 </head>
 
 <body>
-	<div class="header-one">
-		<div class="container">
-			<span class="brand">
-				<a href="">Center for Global Education</a>
-			</span>
-			<span class="login-signup">
-				<a href="">Log in</a> or <a href="">sign up</a> now to manage your
-				account. <a href="">Need help making an appointment?</a>
-			</span>
-		</div>
-	</div>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 			<div class="container">
 				<a class="navbar-brand" href="/"><img class="img-fluid brand-logo" src="/styles/css/img/logo.png"
 						alt=""> CGE</a>
@@ -48,8 +39,16 @@
 						<li class="nav-item">
 							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#three">Services</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="servicesDropdownMenuLink" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+							<div class="dropdown-menu" aria-labelledby="servicesDropdownMenuLink">
+								<a href="#education" class="dropdown-item">Education</a>
+								<a href="#healthcare" class="dropdown-item">Healthcare</a>
+								<a href="#travel" class="dropdown-item">Travel</a>
+								<a href="#coaching" class="dropdown-item">Coaching</a>
+								<a href="" class="dropdown-item">Others</a>
+							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#resources">Resources</a>
@@ -67,45 +66,40 @@
 					</ul>
 					<ul class="navbar-nav nav-part2">
 						<li class="nav-item">
-							<a href="" class="nav-link"><i class="fas fa-search"></i></a>
+							<a href="#resources" class="nav-link"><i class="fas fa-search"></i></a>
 						</li>
 						<li class="nav-item">
 							<a href="#destinations" class="nav-link"><i class="fas fa-globe"></i></a>
 						</li>
-						<button class="btn btn-success">Locations</button>
+						<li class="nav-item">
+							<button class="btn btn-success contact-us-btn">Contact us</button>
+						</li>
 					</ul>
 				</div>
 			</div>
-
 		</nav>
 	</header>
-	<section id="landing-page">
 
-		<div id="hero-section">
-			<div class="container">
-
-				<div class="hero-wrapper">
-
-					<div class="hero-content">
-						<div class="text-content">
-							<div class="quote">
-								"Education is not the learning of facts, but the training of
-								the mind to think" -Albert Einstein
-							</div>
-							<div class="sub-header">
-								Whether in study abroad, healthcare, travel or technology,
-								Center for Global Education has innovative processes and
-								technology that allows us to optimize the experience for our
-								students and clients with ease and transparency.
-							</div>
-							<a href="#three" class="btn btn-success">Explore our services</a>
+	<section id="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="text-content">
+						<div class="quote">
+							"Education is not the learning of facts, but the training of
+							the mind to think" -Albert Einstein
 						</div>
-					</div>
-					<div class="hero-images">
-
+						<div class="sub-header">
+							Whether in study abroad, healthcare, travel or technology,
+							Center for Global Education has innovative processes and
+							technology that allows us to optimize the experience for our
+							students and clients with ease and transparency.
+						</div>
+						<a href="#three" class="btn btn-success">Explore our services</a>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
@@ -113,7 +107,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 order-2 order-lg-1">
-					<img class="img-fluid" src="./styles/css/img/girlwlaptop.jpg" alt="" />
+					<img class="img-fluid lozad" data-src="./styles/css/img/girlwlaptop.jpg" alt="" />
 				</div>
 				<div class="col-lg-6 order-1 order-lg-2">
 					<div class="text-content">
@@ -138,7 +132,7 @@
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="vector">
-							<img src="/styles/css/img/improved-performance.svg" alt="" />
+							<img class="lozad" data-src="/styles/css/img/improved-performance.svg" alt="" />
 						</div>
 						<div class="icon-head">
 							<h4>Improved performance</h4>
@@ -146,7 +140,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="vector">
-							<img src="/styles/css/img/value-globe.png" alt="" />
+							<img class="lozad" data-src="/styles/css/img/value-globe.png" alt="" />
 						</div>
 						<div class="icon-head">
 							<h4>Convenient, global presence</h4>
@@ -154,7 +148,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="vector">
-							<img src="/styles/css/img/service.png" alt="" />
+							<img class="lozad" data-src="/styles/css/img/service.png" alt="" />
 						</div>
 						<div class="icon-head">
 							<h4>Best service guarantee</h4>
@@ -162,7 +156,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="vector">
-							<img src="/styles/css/img/uncompromise.png" alt="" />
+							<img class="lozad" data-src="/styles/css/img/uncompromise.png" alt="" />
 						</div>
 						<div class="icon-head">
 							<h4>Uncompromising experience</h4>
@@ -178,8 +172,8 @@
 		<div class="container">
 			<h1 class="section-header text-center">Real Clients. Real Results</h1>
 
-			<div class="education feature">
-				<div class="feature-bg"></div>
+			<div id="education" class="education feature">
+				<div class="feature-bg lozad" data-background-image="/styles/css/img/education-bg.jpg"></div>
 				<div class="feature-wrapper">
 					<div class="feature-content">
 						<div class="feature-header">
@@ -202,25 +196,17 @@
 						</div>
 					</div>
 					<div class="feature-assets">
-						<!-- <a href="" class="feature-logo">
-							<div class="logo">
-								<img class="logo-image"
-									src="https://www.flywire.com/cdnimages/images/partner-logos/_logo/logo-uva.svg"
-									alt="" />
-							</div>
-							<span class="feature-link link -bright">Read case study</span>
-						</a> -->
-						<img src="/styles/css/img/education-feature.jpg" alt="" class="feature-image" />
+						<img data-src="/styles/css/img/education-feature.jpg" alt="" class="feature-image lozad" />
 					</div>
 				</div>
 			</div>
 
-			<div class="healthcare feature -reverse">
-				<div class="feature-bg"></div>
+			<div id="healthcare" class="healthcare feature -reverse">
+				<div class="feature-bg lozad" data-background-image="/styles/css/img/healthcare-bg.jpg"></div>
 				<div class="feature-wrapper">
 					<div class="feature-content">
 						<div class="feature-header">
-							<img src="/styles/css/img/healthcare-icon.svg" alt="" class="feature-icon" />
+							<img data-src="/styles/css/img/healthcare-icon.svg" alt="" class="feature-icon lozad" />
 							<h3 class="feature-headline">Healthcare</h3>
 						</div>
 						<div class="feature-description">
@@ -228,7 +214,8 @@
 								Center for Global Education helps international students to
 								buy OHSC health insurance of their choice by comparing all six
 								Australian Government approved healthcare providers on
-								OHSCcompare.com; buy their policy online and have it in
+								<a target="_blank" href="https://www.ohsccompare.com">OHSCcompare.com</a>; buy their
+								policy online and have it in
 								minutes in their mailbox; making it easier and more affordable
 								for their students.
 							</p>
@@ -238,29 +225,22 @@
 							<span class="stat-description">average savings on OHSC policy</span>
 						</div>
 						<div class="feature-action">
-							<a href="" class="btn btn-success">OHSC Insurance. Solved.</a>
+							<a href="https://www.ohsccompare.com" target="_blank" class="btn btn-success">OHSC
+								Insurance. Solved.</a>
 						</div>
 					</div>
 					<div class="feature-assets">
-						<!-- <a href="" class="feature-logo">
-							<div class="logo">
-								<img class="logo-image"
-									src="https://www.flywire.com/cdnimages/images/partner-logos/_logo/munson-healthcare.png"
-									alt="" />
-							</div>
-							<span class="feature-link link -bright">Read case study</span>
-						</a> -->
-						<img src="/styles/css/img/healthcare-feature.jpg" alt="" class="feature-image" />
+						<img data-src="/styles/css/img/healthcare-feature.jpg" alt="" class="feature-image lozad" />
 					</div>
 				</div>
 			</div>
 
-			<div class="feature travel">
-				<div class="feature-bg"></div>
+			<div id="travel" class="feature travel">
+				<div class="feature-bg lozad" data-background-image="/styles/css/img/travel-bg.jpg"></div>
 				<div class="feature-wrapper">
 					<div class="feature-content">
 						<div class="feature-header">
-							<img src="/styles/css/img/travel-icon.svg" alt="" class="feature-icon" />
+							<img data-src="/styles/css/img/travel-icon.svg" alt="" class="lozad feature-icon" />
 							<h3 class="feature-headline">Travel</h3>
 						</div>
 						<div class="feature-description">
@@ -280,63 +260,37 @@
 						</div>
 					</div>
 					<div class="feature-assets">
-						<!-- <a href="" class="feature-logo">
-							<div class="logo">
-								<img class="logo-image"
-									src="https://www.flywire.com/cdnimages/images/partner-logos/_logo/ian-taylor-logo.jpg"
-									alt="" />
-							</div>
-							<span class="feature-link link -bright">Read case study</span>
-						</a> -->
-						<img src="/styles/css/img/travel-feature.jpg" alt="" class="feature-image" />
+						<img data-src="/styles/css/img/travel-feature.jpg" alt="" class="lozad feature-image" />
 					</div>
 				</div>
 			</div>
 
-			<div class="coaching feature -reverse">
-				<div class="feature-bg"></div>
+			<div id="coaching" class="coaching feature -reverse">
+				<div class="feature-bg lozad" data-background-image="/styles/css/img/coaching-bg.jpg"></div>
 				<div class="feature-wrapper">
 					<div class="feature-content">
 						<div class="feature-header">
-							<img src="/styles/css/img/coaching-icon.svg" alt="" class="feature-icon" />
+							<img data-src="/styles/css/img/coaching-icon.svg" alt="" class="lozad feature-icon" />
 							<h3 class="feature-headline">Coaching</h3>
 						</div>
 						<div class="feature-description">
 							<p>
 								Center for Global Education helps students prepare to meet their english language
-								requirements. <a href="">Get a Demo.</a>
+								requirements. <a href="#embedded-form">Get a Demo.</a>
 							</p>
 						</div>
 						<div class="stat feature-stat">
-							<span class="stat-number">$300 AUD</span>
-							<span class="stat-description">average savings on OHSC policy</span>
+							<span class="stat-number">$3500 AUD</span>
+							<span class="stat-description">average savings on english language programs</span>
 						</div>
 						<div class="feature-action">
 							<a href="" class="btn btn-success">IELTS.PTE.TOEFL.Solved</a>
 						</div>
 					</div>
 					<div class="feature-assets">
-						<!-- <a href="" class="feature-logo">
-							<div class="logo">
-								<img class="logo-image"
-									src="https://www.flywire.com/cdnimages/images/partner-logos/_logo/munson-healthcare.png"
-									alt="" />
-							</div>
-							<span class="feature-link link -bright">Read case study</span>
-						</a> -->
-						<img src="/styles/css/img/coaching-feature.jpg" alt="" class="feature-image" />
+						<img data-src="/styles/css/img/coaching-feature.jpg" alt="" class="lozad feature-image" />
 					</div>
 				</div>
-			</div>
-
-			<div class="layer">
-				<h3>
-					Explore ways how students are prepared to meet their English
-					language requirements
-					<br />
-					IELTS-PTE-TOEFL
-				</h3>
-				<button class="btn btn-success">Get a Demo</button>
 			</div>
 		</div>
 	</section>
@@ -346,52 +300,61 @@
 			<h1 class="section-header text-center">Destinations</h1>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="country-tile uk">
+					<div class="country-tile uk lozad" data-background-image="/styles/css/img/uk.jpg">
 						<p class="country-name">United Kingdom</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile canada">
+					<div class="country-tile canada lozad" data-background-image="/styles/css/img/canada.jpg">
 						<p class="country-name">Canada</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile ireland">
+					<div class="country-tile ireland lozad" data-background-image="/styles/css/img/ireland.jpg">
 						<p class="country-name">Ireland</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="country-tile australia">
+					<div class="country-tile australia lozad" data-background-image="/styles/css/img/australia.jpg">
 						<p class="country-name">Australia</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile usa">
+					<div class="country-tile usa lozad" data-background-image="/styles/css/img/usa.jpg">
 						<p class="country-name">USA</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile nz">
+					<div class="country-tile nz lozad" data-background-image="/styles/css/img/nz.jpg">
 						<p class="country-name">New Zealand</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="country-tile dubai">
+					<div class="country-tile dubai lozad" data-background-image="/styles/css/img/dubai.jpg">
 						<p class="country-name">Dubai</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile europe">
+					<div class="country-tile europe lozad" data-background-image="/styles/css/img/europe.jpg">
 						<p class="country-name">Europe</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="country-tile singapore">
+					<div class="country-tile singapore lozad" data-background-image="/styles/css/img/singapore.jpg">
 						<p class="country-name">Singapore</p>
+						<div class="bg-gradient"></div>
 					</div>
 				</div>
 			</div>
@@ -400,27 +363,31 @@
 	</section>
 
 	<div id="resources" class="insights layer">
-		<div class="container text-center">
+		<div class="big-container">
 			<h2 class="headline">Resources</h2>
 			<div class="main-card">
 				<div class="row">
 					<div class="col-lg-6 text-content">
-						<h3>FAQ</h3>
+						<h1>FAQ</h1>
 						<p>Can't find the answer you're looking for? We've shared some of our most frequently asked
 							questions to help you out!</p>
-						<button class="btn-success btn">Explore</button>
+						<a href="faq.html" class="btn-success btn">Explore</a>
 					</div>
 					<div class="col-lg-6 picture">
-						<img class="img-fluid" src="/styles/css/img/faq.jpg" alt="" />
+						<img class="img-fluid lozad" data-src="/styles/css/img/faq.jpg" alt="" />
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="container text-center">
+
 			<div class="smaller-cards">
 				<div class="row">
 					<div class="col-md-6">
 						<div class="sc1">
 							<div class="profile">
-								<img src="/styles/css/img/confidence.svg" alt="">
+								<img class="lozad" data-src="/styles/css/img/confidence.svg" alt="">
 							</div>
 							<div class="p-text">
 								Center for Global Education helps clients plan with confidence in COVID-19 era.
@@ -431,7 +398,7 @@
 					<div class="col-md-6">
 						<div class="sc2">
 							<div class="profile">
-								<img src="/styles/css/img/confidence.svg" alt="">
+								<img class="lozad" data-src="/styles/css/img/confidence.svg" alt="">
 							</div>
 							<div class="p-text">
 								Center for Global Education helps employees plan with confidence in COVID-19 era.
@@ -444,20 +411,8 @@
 		</div>
 	</div>
 
-	<div class="layer -lightgray">
-		<div class="callout">
-			<div class="container">
-				<h3 class="callout-heading">
-					Analysis, resources, tools, and more from the people who've been
-					there.
-				</h3>
-				<button class="btn btn-success">Resources</button>
-			</div>
-		</div>
-	</div>
-
 	<div class="layer statisticsBlock -overlay -callout">
-		<div class="layer-bg"></div>
+		<div class="layer-bg lozad" data-background-image="/styles/css/img/statisticblock-bg.jpg"></div>
 		<div class="container statisticsBlock-container text-center">
 			<h2 class="headline statisticsBlock-headline">
 				Global and Still Growing
@@ -491,11 +446,10 @@
 					<div class="stat-description">locations</div>
 				</div>
 			</div>
-			<button class="btn btn-success">More about us</button>
 		</div>
 	</div>
 
-	<div class="layer team-member">
+	<div id="team-member" class="layer team-member">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-6">
@@ -532,7 +486,7 @@
 						</h3>
 
 						<div class="team-member-action">
-							<button class="btn btn-success">Explore Careers at CGE</button>
+							<a href="careers.html" target="_blank" class="btn btn-success">Explore Careers at CGE</a>
 						</div>
 					</div>
 				</div>
@@ -540,7 +494,7 @@
 		</div>
 	</div>
 
-	<div class="layer embedded-form">
+	<div id="embedded-form" class="layer embedded-form">
 		<div class="container text-center">
 			<h2 class="headline">Ask Us a Question, Any Question</h2>
 			<div class="sub-heading">
@@ -589,23 +543,25 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="header">
-						<h1 class="brand">CGE</h1>
-						<button class="btn btn-primary">Contact</button>
+						<div class="brand-wrapper">
+							<img data-src="/styles/css/img/logo.png" alt="" class="img-fluid lozad">
+							<h1 class="brand">CGE</h1>
+						</div>
+
+						<a href="#embedded-form" class="btn btn-primary">Get a demo</a>
 					</div>
 					<div class="row">
 						<div class="col-6">
 							<ul>
-								<li><a href="">Get a Demo</a></li>
-								<li><a href="">Buy OHSC</a></li>
-								<li><a href="">FAQ</a></li>
-								<li><a href="">Search</a></li>
+								<li><a href="#team-member">Company</a></li>
+								<li><a href="#three">Services</a></li>
+								<li><a href="#resources">Resources</a></li>
 							</ul>
 						</div>
 						<div class="col-6">
 							<ul>
-								<li><a href="">Company</a></li>
-								<li><a href="">Services</a></li>
-								<li><a href="">Resources</a></li>
+								<li><a href="https://ohsccompare.com" target="_blank">Buy OHSC</a></li>
+								<li><a href="#resources">FAQ</a></li>
 								<li><a href="">Testimonials</a></li>
 							</ul>
 						</div>
@@ -622,7 +578,6 @@
 					<div>
 						Copyright Center for Global Education. 2020 All rights reserved.
 					</div>
-					<div class="legal"><a href="">Legal & Privacy</a></div>
 				</div>
 			</div>
 		</div>

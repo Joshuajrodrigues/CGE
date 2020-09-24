@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
+    <!-- Lozad js  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <!-- CSS Main -->
     <link rel="stylesheet" href="./styles/css/index.css" />
 
@@ -24,8 +26,8 @@
 
 <body>
 
-    <header id="blog-header">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="/"><img class="img-fluid brand-logo" src="/styles/css/img/logo.png"
                         alt=""> CGE</a>
@@ -38,11 +40,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#three">Services</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="servicesDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="servicesDropdownMenuLink">
+                                <a href="/#education" class="dropdown-item">Education</a>
+                                <a href="/#healthcare" class="dropdown-item">Healthcare</a>
+                                <a href="/#travel" class="dropdown-item">Travel</a>
+                                <a href="/#coaching" class="dropdown-item">Coaching</a>
+                                <a href="" class="dropdown-item">Others</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="/#resources">Resources</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -51,25 +61,39 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="values.html">Values</a>
-                                <a class="dropdown-item" href="#">Careers</a>
+                                <a class="dropdown-item" href="careers.html">Careers</a>
                             </div>
                         </li>
                     </ul>
                     <ul class="navbar-nav nav-part2">
                         <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fas fa-search"></i></a>
+                            <a href="/#resources" class="nav-link"><i class="fas fa-search"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="/#destinations" class="nav-link"><i class="fas fa-globe"></i></a>
                         </li>
-                        <button class="btn btn-success">Locations</button>
+                        <li class="nav-item">
+                            <button class="btn btn-success contact-us-btn">Contact us</button>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section id="blog-section">
+    <section id="secondary-hero" class="blog-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-content">
+                        <h1 class="hero-header">Blog</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-section" class="layer">
         <div class="container">
             <h2 class="blog-header">Center for Global Education helps employees plan with confidence in COVID-19 era.
             </h2>
@@ -104,6 +128,51 @@
     </section>
 
 
+
+    <footer class="layer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header">
+                        <div class="brand-wrapper">
+                            <img data-src="/styles/css/img/logo.png" alt="" class="img-fluid lozad">
+                            <h1 class="brand">CGE</h1>
+                        </div>
+
+                        <a href="/#embedded-form" class="btn btn-primary">Get a demo</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="/#team-member">Company</a></li>
+                                <li><a href="/#three">Services</a></li>
+                                <li><a href="/#resources">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="https://ohsccompare.com" target="_blank">Buy OHSC</a></li>
+                                <li><a href="/#resources">FAQ</a></li>
+                                <li><a href="">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="socials">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-vimeo"></i></a>
+                    </div>
+                    <div>
+                        Copyright Center for Global Education. 2020 All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

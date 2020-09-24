@@ -1,29 +1,36 @@
-#values-header{
-    .navbar{
+#secondary-hero{
+    height: 600px;
+    background: url("/styles/css/img/hero-bg.svg") left no-repeat,linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url("/styles/css/img/education-feature.jpg") 50% 69% no-repeat;
+    background-size: cover;
 
-        .nav-part2{
-            &::before{
-                border-width: 72px 20px 0 0;
-                left: -20px;
-            }
-        }
+    .container, .row, .col-lg-5{
+        height: 100%;
     }
-}
 
+    .col-lg-5{
+        display: flex;
+        align-items: center;
+    }
 
-#values-landing{
     .text-content{
-        margin: 0;
+        margin-top: 3rem;
     }
+
     .hero-header{
         font-size: 3.5rem;
         margin-bottom: 1rem;
+        color: white;
+    }
+    .hero-subheader{
+        color: #ffffffe5;
+        margin-bottom: 3rem;
+        line-height: 1.8;
     }
 }
 
-@media (max-width: 992px){
-    .text-content{
-        margin: auto !important;
+#secondary-hero.values-hero{
+    .hero-subheader{
+        font-size: 20px;
     }
 }
 
@@ -73,7 +80,7 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background: #edfaf9;
+            background: #edf4fa;
             clip-path: polygon(0 0, 50% 0, 43% 100%, 0 100%);
             z-index: -1;
         }
