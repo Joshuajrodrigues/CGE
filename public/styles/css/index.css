@@ -328,10 +328,15 @@ header .navbar .navbar-collapse .navbar-nav .nav-link {
 }
 
 #hero .sub-header {
-  width: 80%;
   color: #ffffffe5;
   margin-bottom: 3rem;
   line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  #hero .sub-header {
+    width: 80%;
+  }
 }
 
 #hero .btn-success {
@@ -364,7 +369,12 @@ header .navbar .navbar-collapse .navbar-nav .nav-link {
 
 #one .row .text-content {
   margin: auto;
-  width: 80%;
+}
+
+@media (min-width: 768px) {
+  #one .row .text-content {
+    width: 80%;
+  }
 }
 
 #one .row .text-content h3 {
@@ -397,7 +407,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-link {
     margin: 25px 0 !important;
   }
   #one .col-lg-6 img {
-    margin: 40px 0 !important;
+    margin: 40px auto !important;
   }
 }
 

@@ -147,7 +147,9 @@ header{
     }
 
     .sub-header{
-        width: 80%;
+        @media (min-width:768px){
+            width: 80%;
+        }
         color: #ffffffe5;
         margin-bottom: 3rem;
         line-height: 1.8;
@@ -179,7 +181,9 @@ header{
 
         .text-content{
             margin: auto;
-            width: 80%;
+            @media (min-width: 768px){
+                width: 80%;
+            }
             h3{
                 color: #3a4047ed;
                 font-weight: 700;
@@ -215,7 +219,7 @@ header{
         }
         .col-lg-6{
             img{
-                margin: 40px 0 !important;
+                margin: 40px auto !important;
             }
         }
     }
