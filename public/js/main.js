@@ -73,3 +73,10 @@ $(function() {
         }
     });
 });
+
+
+// =============== FAQ js =================
+
+$("#faq-body .question").on("click", function(){
+    $(this).parent().find(".answer-wrapper").toggleClass("h-auto");
+})

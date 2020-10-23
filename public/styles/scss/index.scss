@@ -683,81 +683,93 @@ img {
     }
     .qa-wrapper{
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
         &::before{
             position: absolute;
             top: 0;
-            left: -40px;
-            font-size: 20px;
-            font-weight: 600;
+            left: -45px;
+            font-size: 1.2rem;
+            color: #36393f;
+            font-weight: 500;
         }
 
         .question{
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            cursor: pointer;
+            color: #36393f;
+        }
+
+        .answer-wrapper{
+            transition: height 0.4s linear;
+            overflow: hidden;
+            height: 0;
         }
 
         .answer{
             color: #777777;
+            margin: 0;
+            padding-bottom: 1rem;
         }
     }
     .qa-wrapper.one{
         &::before{            
-            content: "1)";
+            content: "1.";
         }
     }
     .qa-wrapper.two{
         &::before{
-            content: "2)";
+            content: "2.";
         }
     }
     .qa-wrapper.three{
         &::before{
-            content: "3)";
+            content: "3.";
         }
     }
     .qa-wrapper.four{
         &::before{
-            content: "4)";
+            content: "4.";
         }
     }
     .qa-wrapper.five{
         &::before{
-            content: "5)";
+            content: "5.";
         }
     }
     .qa-wrapper.six{
         &::before{
-            content: "6)";
+            content: "6.";
         }
     }
     .qa-wrapper.seven{
         &::before{
-            content: "7)";
+            content: "7.";
         }
     }
     .qa-wrapper.eight{
         &::before{
-            content: "8)";
+            content: "8.";
         }
     }
     .qa-wrapper.nine{
         &::before{
-            content: "9)";
+            content: "9.";
         }
     }
     .qa-wrapper.ten{
         &::before{
-            content: "10)";
+            content: "10.";
         }
     }
     .qa-wrapper.eleven{
         &::before{
-            content: "11)";
+            content: "11.";
         }
     }
     .qa-wrapper.twelve{
         &::before{
-            content: "12)";
+            content: "12.";
         }
     }
 }
