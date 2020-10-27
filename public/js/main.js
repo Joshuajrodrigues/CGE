@@ -30,6 +30,11 @@ $(window).on("load resize", function () {
 
 
 
+$(document).on("click", ".navbar .navbar-toggler", function(){
+    $(this).closest(".navbar").toggleClass("navbar-bg")
+})
+
+
 if ($('.navbar').length > 0) { // check if element exists
     var last_scroll_top = 0;
     $(window).on('scroll', function () {

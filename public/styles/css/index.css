@@ -190,6 +190,21 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.border-right {
+  border-right: 1px solid #e0e0e0;
+}
+
 .section-header {
   color: #3c5f85;
   letter-spacing: 0.5px;
@@ -218,6 +233,10 @@ body {
   }
 }
 
+.navbar-bg {
+  background-color: #147bd1;
+}
+
 .scrolled-down {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -230,7 +249,7 @@ body {
           transform: translateY(0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #147bd1;
   -webkit-box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.1);
 }
@@ -869,6 +888,16 @@ img {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: profile;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.layer.insights .container .smaller-cards .row .col-md-6 .sc1 .profile img, .layer.insights .container .smaller-cards .row .col-md-6 .sc2 .profile img {
+  width: 80%;
 }
 
 .layer.insights .container .smaller-cards .row .col-md-6 .sc1 .p-text, .layer.insights .container .smaller-cards .row .col-md-6 .sc2 .p-text {
@@ -1274,6 +1303,52 @@ img {
   font-size: 2.8rem;
   font-weight: 400;
   color: #fff;
+}
+
+#contact-us .section-header {
+  margin-bottom: 1rem;
+}
+
+#contact-us .section-subheader {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 14.7px;
+}
+
+#contact-us .col-md-6 {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #contact-us .border-right {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+}
+
+#contact-us .contact-details .deet-wrap {
+  margin-bottom: 1.5rem;
+}
+
+#contact-us .contact-details .header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contact-us .contact-details .content {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 0;
 }
 
 .embedded-form {
